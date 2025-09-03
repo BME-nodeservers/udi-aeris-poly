@@ -15,7 +15,7 @@ LOGGER = udi_interface.LOGGER
 if __name__ == "__main__":
     try:
         polyglot = udi_interface.Interface([aeris.Controller, aeris_daily.DailyNode])
-        polyglot.start('2.0.9')
+        polyglot.start('2.0.10')
         control = aeris.Controller(polyglot, 'controller', 'controller', 'AERIS Weather')
         polyglot.runForever()
     except (KeyboardInterrupt, SystemExit):
